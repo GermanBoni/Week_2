@@ -50,6 +50,7 @@ class Book{
     }
 
     toString():void{
-       console.log("Title - " + this.title + "\n" + "Number of pages- " + this.nPages.toString() +
-        }
+       console.log("Title - " + this.title + "\n" + "Number of pages- " + this.nPages.toString())
+    }
+        
 }
