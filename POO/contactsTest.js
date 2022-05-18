@@ -8,6 +8,6 @@ let lucas = new Person (1.72, 73, "Rubio", "Azules", 1994, ["Piano", "Fiesta", "
 let agenda = new Contacts()
 
 agenda.people=[juan, lucas]
-
-// console.log(agenda.people);
+// con la sentencia de arriva es donde enlazo las dos clases
+console.log(agenda.people);
 agenda.printPersons();
