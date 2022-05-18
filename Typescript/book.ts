@@ -1,5 +1,5 @@
 
-class Book{
+export class Book{
 
     private title:string
     private nPages:number
@@ -31,7 +31,7 @@ class Book{
         this.editorial=editorial
     }
 
-    //En el set, tengo que decir el parametro de dentro que tipo de dato es? o este parametro corresponde al parametro definido en el constructor?
+    
 
     public getTitle():string{
         return this.title
@@ -50,7 +50,9 @@ class Book{
     }
 
     toString():void{
-       console.log("Title - " + this.title + "\n" + "Number of pages- " + this.nPages.toString())
+       console.log("Title - " + this.title + "\n" + "Number of pages - " + this.nPages.toString() + "\n" + "ISBN - " + this.isbn + "\n" + "Author - " + this.author + "\n" + "Editorial - " + this.editorial)
     }
         
 }
+
+//Realmente como puede ser que toString() tenga acceso a los atributos de la clase book si son privados??
