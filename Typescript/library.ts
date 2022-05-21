@@ -1,7 +1,7 @@
 
 import { Book } from "./Book";
 
-class Library{
+export class Library{
 
     private books:Book[]
     private address:string
@@ -11,7 +11,7 @@ class Library{
 
         this.books=books
         this.address=address
-        this.manager=address
+        this.manager=manager
     }
 
     public getAddress():string{
@@ -27,19 +27,28 @@ class Library{
     public setManager(manager:string):void{
         this.manager=manager
     }
-
     getBooks():Book[]{
         return this.books
     }
-//Con el getBooks de arriba he hecho publico el atributo books en todo el archivo?
-    
-    public toString():void{
-            for (let i=0; i<this.books.length; i++){
-                
-                console.log("Title - " + this.title + "\n" + "Number of pages - " + this.nPages.toString() + "\n" + "ISBN - " + this.isbn + "\n" + "Author - " + this.author + "\n" + "Editorial - " + this.editorial) 
-            }
+
+    public toString():string{
+
+        for (let i=0; i<this.books.length; i++){
+            
+            return this.books[i].toString()
         }
     }
+
+    public getNumberOfBooks():number{
+        return this.books.length
+    }
+
+    public findByAuthor(author:string){
+        for (let i=0; i< this.books.length; i++)
+            if (this.books[i].getAuthor() == author){
+                return this.books[i].getTitle()
+            }
+    }
 }
-//Puedo acceder a atributos de otra clase si la he importado a mi clase? (por ejemplo this title de arriba)
-// con el get tambien se puede hacer console.log o es siempre return?
+
+ 

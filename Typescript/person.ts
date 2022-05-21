@@ -19,12 +19,12 @@ export class Person{
     yearOfBirth(currentYear:number):number{
         return currentYear-this.age
     }
-// preguntar si el void puesto en el set esta bien?
+
 
     setAddress(address:string):void{
         this.address=address
     }
-//el get es para return y console?
+
     getAddress():string{
         return this.address
     }

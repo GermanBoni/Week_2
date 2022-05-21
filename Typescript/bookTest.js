@@ -7,7 +7,7 @@ console.log(libro1.getEditorial());
 console.log(libro1.getIsbn());
 console.log(libro1.getNpages());
 console.log(libro1.getTitle());
-libro1.toString();
+console.log(libro1.toString());
 libro1.setAuthor("Antonio Ruíz Safont");
 libro1.setEditorial("Bromera");
 libro1.setIsbn("ggggggggg43525");
@@ -18,4 +18,6 @@ console.log(libro1.getEditorial());
 console.log(libro1.getIsbn());
 console.log(libro1.getNpages());
 console.log(libro1.getTitle());
-libro1.toString();
+console.log(libro1.toString());
+console.log(libro1.toString());
+// realmente con toString puedo acceder a los atributos, aunque sean privados, porque estoy utilizando un metodo de esa clase. Lo que no podria es acceder a esos atributos desde una clase difernte, pero si usando sus metodods si la clase esta exportada????

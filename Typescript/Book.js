@@ -24,7 +24,6 @@ var Book = /** @class */ (function () {
     Book.prototype.setEditorial = function (editorial) {
         this.editorial = editorial;
     };
-    //En el set, tengo que decir el parametro de dentro que tipo de dato es? o este parametro corresponde al parametro definido en el constructor?
     Book.prototype.getTitle = function () {
         return this.title;
     };
@@ -41,7 +40,7 @@ var Book = /** @class */ (function () {
         return this.editorial;
     };
     Book.prototype.toString = function () {
-        console.log("Title - " + this.title + "\n" + "Number of pages - " + this.nPages.toString() + "\n" + "ISBN - " + this.isbn + "\n" + "Author - " + this.author + "\n" + "Editorial - " + this.editorial);
+        return "Title - " + this.title + "\n" + "Number of pages - " + this.nPages.toString() + "\n" + "ISBN - " + this.isbn + "\n" + "Author - " + this.author + "\n" + "Editorial - " + this.editorial;
     };
     return Book;
 }());

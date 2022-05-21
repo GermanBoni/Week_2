@@ -49,10 +49,9 @@ export class Book{
         return this.editorial
     }
 
-    toString():void{
-       console.log("Title - " + this.title + "\n" + "Number of pages - " + this.nPages.toString() + "\n" + "ISBN - " + this.isbn + "\n" + "Author - " + this.author + "\n" + "Editorial - " + this.editorial)
+    toString():string{
+       return "Title - " + this.title + "\n" + "Number of pages - " + this.nPages.toString() + "\n" + "ISBN - " + this.isbn + "\n" + "Author - " + this.author + "\n" + "Editorial - " + this.editorial
     }
         
 }
 
-//Realmente como puede ser que toString() tenga acceso a los atributos de la clase book si son privados??
